@@ -1,3 +1,4 @@
+"""
 from deep_translator import GoogleTranslator
 
 # dicionário para guardar palavras já traduzidas
@@ -42,5 +43,20 @@ while True:
             print("Opcão invalida")
     memoria[palavra] = traducao
     print(f"A tradução de '{palavra}' é: {traducao}")
+
+"""
+
+#!/usr/bin/python3
+
+def hanoi(n, origem, destino, auxiliar):
+    if n == 1:
+        print("Mova disco 1 de " + origem + " para " + destino)
+    else:
+        hanoi(n - 1, origem, auxiliar, destino)
+        print("Mova disco " + str(n) + " de " + origem + " para " + destino)
+        hanoi(n - 1, auxiliar, destino, origem)
+
+# Exemplo: 3 discos
+hanoi(3, 'A', 'C', 'B')
 
 
