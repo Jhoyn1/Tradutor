@@ -15,7 +15,7 @@ else:
     memoria = {}
 
 
-# criando um loop infinito, até usar a string "break"
+# criando um loop infinito, até usar "break"
 while True:
 
     direcao = input("Digite 1 para traduzir do EN -> PT, 2 para PT -> EN, ou sair para encerrar: ")
